@@ -30,6 +30,7 @@ public class NumbersActivity extends AppCompatActivity {
 
 
         WordAdapter adapter = new WordAdapter(this,words);
+        //hallo
 
         //ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<Word>(this, R.layout.list_item, words);
 
