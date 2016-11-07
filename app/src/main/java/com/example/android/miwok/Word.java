@@ -4,7 +4,7 @@ package com.example.android.miwok;
  * Created by Sandro on 06.11.2016.
  */
 
-public class Word {
+public class Word{
 
     private String mDefaultTranslation;
     private String mMiwokTranslation;
@@ -19,6 +19,8 @@ public class Word {
     }
 
     public String getMiwokTranslation() {
-        return this.mDefaultTranslation;
+        return this.mMiwokTranslation;
     }
+
+
 }
