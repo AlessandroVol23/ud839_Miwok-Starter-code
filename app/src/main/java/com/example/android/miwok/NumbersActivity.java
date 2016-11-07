@@ -11,11 +11,11 @@ public class NumbersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_numbers);
+        setContentView(R.layout.word_list);
 
-
+        //Arraylist with Word objects
         ArrayList<Word> words = new ArrayList<Word>();
-
+        //creating the words with translation
         words.add(new com.example.android.miwok.Word("one", "lutti"));
         words.add(new com.example.android.miwok.Word("two", "otiiko"));
         words.add(new com.example.android.miwok.Word("three", "tolookosu"));
@@ -26,17 +26,11 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new com.example.android.miwok.Word("eight", "kawinta"));
         words.add(new com.example.android.miwok.Word("nine", "wo'e"));
         words.add(new com.example.android.miwok.Word("ten", "na'aacha"));
-
-
+        //creating a new WordAdapter Object with and give him context and word list
         WordAdapter adapter = new WordAdapter(this,words);
-
-        //ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<Word>(this, R.layout.list_item, words);
-
+        //find the listview and set the adapter
         ListView listview = (ListView) findViewById(R.id.list);
         listview.setAdapter(adapter);
-
-        //GridView grid = (GridView)findViewById(R.id.list);
-        //grid.setAdapter(itemsAdapter);
 
 
     }
